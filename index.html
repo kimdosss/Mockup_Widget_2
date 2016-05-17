@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Widget_2</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!--angular-->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  
+ 	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<!--css-->
+	<link rel="stylesheet" href="css/index.css">
+
+	<!-- font -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+
+	<!--js-->
+	<script src="js/app.js"></script>
+ 	<script src="js/controllers.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="build/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <script src="build\bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body-bg" ng-app="widget_2" ng-controller="widgetCon">
+	
+<div class="tool_container">
+	<nav class="app_nav navbar  navbar-fixed-top">
+	<!-- Responsive header -->
+	    <div class="app_nav-header navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+			<span class="glyphicon glyphicon-menu-hamburger"></span>
+			              
+			</button>
+	    </div>
+	    <div class="app_nav-container collapse navbar-collapse" id="navbar">	      
+			<ul class="app_nav-list nav navbar-nav navbar-left">
+			<!-- Highlight selected item by setting class = 'items-selected' -->
+				<li ng-class="{'items-selected': ItemSelected == 1}" class="app_nav-list-items app_nav-list-item-1"  ng-click="ItemSelected = 1">
+					<a href="#Checkin"><span class="icon glyphicon glyphicon-map-marker"></span><span class="app_nav-list-items-content">CHECK IN</span><span class="app_nav-list-items-number">{{checkin}}</span></a>
+				</li>
+				<li class="app_nav-list-items app_nav-list-item-2" ng-class="{'items-selected': ItemSelected == 2}" ng-click="ItemSelected = 2">
+					<a href="#Event"><span class="icon glyphicon glyphicon-heart"></span><span class="app_nav-list-items-content">EVENTS</span></a>
+				</li>
+				<li class="app_nav-list-items app_nav-list-item-3" ng-class="{'items-selected': ItemSelected == 3}" ng-click="ItemSelected = 3">
+					<a href="#Account"><span class="icon glyphicon glyphicon-user"></span><span class="app_nav-list-items-content">ACCOUNT</span></a>
+				</li>
+				<li ng-class="{'items-selected': ItemSelected == 4}" class="dropdown app_nav-list-items app_nav-list-item-4" ng-click="ItemSelected = 4">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+				 		<span class="icon glyphicon glyphicon-cog"></span><span class="app_nav-list-items-content">SETTINGS</span>
+				 	</a>
+				 	<!-- Dropdown menu contents -->
+				  	<ul class="dropdown-menu">
+					    <li class="app_nav-list-items-dropdown-items"><a href="#">System</a></li>
+					    <li class="app_nav-list-items-dropdown-items"><a href="#">Audio</a></li>
+					    <li class="app_nav-list-items-dropdown-items"><a href="#">Layout</a></li> 
+				  	</ul>
+				</li>
+			</ul>
+	    </div>
+	</nav>	
+</div>
+
+
+
+</body>
+
+</html>

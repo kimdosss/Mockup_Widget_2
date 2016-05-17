@@ -1,0 +1,90 @@
+.body-bg {
+  background-color: #555; }
+
+.app_nav {
+  margin: 20px;
+  max-width: 640px; }
+  .app_nav .app_nav-header {
+    padding: 0;
+    background: #fff;
+    border-radius: 5px; }
+
+.app_nav-container {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 25px;
+  padding: 0; }
+  .app_nav-container .app_nav-list {
+    background: #fff;
+    margin: 0;
+    border-radius: 5px;
+    /*Hight selected item*/
+    /*Adjust items' position*/ }
+    .app_nav-container .app_nav-list .items-selected {
+      color: #8e8071;
+      background: #f8f3f0;
+      border-bottom: 4px solid #4daf7b;
+      z-index: 10; }
+    .app_nav-container .app_nav-list .app_nav-list-items {
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease; }
+      .app_nav-container .app_nav-list .app_nav-list-items .app_nav-list-items-number {
+        background: #e55e3a;
+        color: #fff;
+        border-radius: 50%;
+        position: relative;
+        top: -11px;
+        left: 12px;
+        padding: 0px 4px;
+        font-size: 10px; }
+      .app_nav-container .app_nav-list .app_nav-list-items .app_nav-list-items-content {
+        position: relative;
+        top: 1px;
+        left: 12px;
+        font-size: 16px; }
+    .app_nav-container .app_nav-list .app_nav-list-item-1 {
+      min-width: 157px; }
+    .app_nav-container .app_nav-list .app_nav-list-item-2 {
+      min-width: 160px; }
+    .app_nav-container .app_nav-list .app_nav-list-item-3 {
+      min-width: 157px; }
+    .app_nav-container .app_nav-list .app_nav-list-item-4 {
+      min-width: 157px; }
+
+.app_nav-list-items a {
+  color: #8e8071;
+  padding-right: 30px; }
+
+/*Hover animation*/
+.app_nav-list-items a:hover {
+  color: #8e8071; }
+
+/*Hover animation*/
+.app_nav-list-items:hover {
+  background: #f8f3f0;
+  border-bottom: 4px solid #54bc75;
+  border-radius: 5px; }
+
+/*Hover animation*/
+.app_nav-list-items:hover .icon {
+  color: #54bc75; }
+
+.app_nav-list-items-dropdown-items {
+  margin: 6px 0 0 0; }
+
+/*Hover animation*/
+.app_nav-list-items-dropdown-items:hover {
+  border-left: 4px solid #54bc75; }
+
+.icon {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  vertical-align: middle;
+  margin: 4px 0 0 1px;
+  font-size: 27px; }
+
+/*# sourceMappingURL=index.css.map */
